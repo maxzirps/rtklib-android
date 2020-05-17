@@ -92,7 +92,7 @@ real applications would read them from a file or other data source.
 
 ________________________________________________________________________________
 import org.proj4.*;
-import java.util.Arrays;
+import java.android.util.Arrays;
 
 
 /**

@@ -5,20 +5,14 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.StrictMode;
 import android.util.Log;
-import android.util.PoGoPin;
 
-import gpsplus.ntripcaster.NTRIPCaster;
-
-import org.acra.ReportingInteractionMode;
-import org.acra.annotation.ReportsCrashes;
 import org.gdal.gdal.gdal;
 import org.gdal.ogr.ogr;
-import org.proj4.PJ;
 
-@ReportsCrashes(formKey = "",
-    mailTo = "bug@sudagri-jatropha.com",
-    mode = ReportingInteractionMode.TOAST,
-    resToastText = R.string.crash_toast_text)
+import proguard.annotation.BuildConfig;
+
+
+
 public class RtkGps extends Application {
 
     private static final boolean DBG = BuildConfig.DEBUG & true;
@@ -43,10 +37,8 @@ public class RtkGps extends Application {
         super.onCreate();
         //ACRA.init(this);
         System.loadLibrary("proj");
-        Log.v("Proj4","Proj4 version: "+PJ.getVersion());
+        // TODO: Log.v("Proj4","Proj4 version: "+ PJ.getVersion());
 
-        System.loadLibrary("ntripcaster");
-        Log.v("ntripcaster","NTRIP Caster "+NTRIPCaster.getVersion());
 
         System.loadLibrary("rtkgps");
 

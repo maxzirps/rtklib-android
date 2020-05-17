@@ -3,8 +3,8 @@
 
 scriptversion=2011-11-20.07; # UTC
 
-# This originates from X11R5 (mit/util/scripts/install.sh), which was
-# later released in X11R6 (xc/config/util/install.sh) with the
+# This originates from X11R5 (mit/android.util/scripts/install.sh), which was
+# later released in X11R6 (xc/config/android.util/install.sh) with the
 # following copyright and license.
 #
 # Copyright (C) 1994 X Consortium

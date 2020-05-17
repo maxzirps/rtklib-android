@@ -6,7 +6,6 @@ import android.widget.ProgressBar;
 
 import com.rtkgps.BuildConfig;
 import com.rtkgps.MainActivity;
-import com.rtkgps.ToolsActivity.DownloaderCaller;
 import com.rtklib.RtkCommon;
 
 import org.apache.commons.net.ftp.FTP;

@@ -97,7 +97,7 @@ The Coordinate Reference Systems and the points are hard-coded for simplicity.
 Of course, real applications would read them from a file or other data source.
 
     import org.proj4.*;
-    import java.util.Arrays;
+    import java.android.util.Arrays;
 
     /**
      * Converts coordinates from EPSG:32632 (WGS 84 / UTM zone 32N) to WGS84,

@@ -7,7 +7,6 @@ import android.widget.ProgressBar;
 
 import cz.msebera.android.httpclient.impl.client.HttpClientBuilder;
 import com.rtkgps.BuildConfig;
-import com.rtkgps.ToolsActivity.DownloaderCaller;
 
 import cz.msebera.android.httpclient.HttpEntity;
 import cz.msebera.android.httpclient.HttpResponse;

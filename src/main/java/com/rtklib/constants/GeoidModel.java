@@ -1,9 +1,10 @@
 package com.rtklib.constants;
 
-com.rtklibimport android.content.res.Resources;
+
+import android.content.res.Resources;
 
 import com.rtkgps.MainActivity;
-import com.rtkgps.R;
+import com.rtklib.R;
 
 import java.io.File;
 

@@ -1,6 +1,5 @@
 package com.rtklib;
 
-import static junit.framework.Assert.assertNotNull;
 
 import android.text.TextUtils;
 
@@ -12,6 +11,8 @@ import com.rtklib.constants.StreamFormat;
 import com.rtklib.constants.StreamType;
 
 import javax.annotation.Nonnull;
+
+import static junit.framework.TestCase.assertNotNull;
 
 public class RtkServerSettings {
 

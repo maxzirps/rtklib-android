@@ -1,6 +1,6 @@
 package com.rtklib.constants;
 
-import com.rtkgps.R;
+import com.rtklib.R;
 
 public enum StationPositionType implements IHasRtklibId {
 
