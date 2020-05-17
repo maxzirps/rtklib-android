@@ -8,7 +8,7 @@ import android.hardware.usb.UsbEndpoint;
 import android.hardware.usb.UsbManager;
 import android.util.Log;
 
-import com.rtkgps.BuildConfig;
+import com.rtklib.BuildConfig;
 import com.rtkgps.usb.SerialLineConfiguration.Parity;
 import com.rtkgps.usb.SerialLineConfiguration.StopBits;
 

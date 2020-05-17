@@ -12,8 +12,8 @@ import android.hardware.usb.UsbManager;
 import android.hardware.usb.UsbRequest;
 import android.util.Log;
 
-import com.rtkgps.BuildConfig;
-import com.rtkgps.R;
+import com.rtklib.BuildConfig;
+import com.rtklib.R;
 
 import org.xmlpull.v1.XmlPullParserException;
 

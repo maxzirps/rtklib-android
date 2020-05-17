@@ -3,8 +3,11 @@ package com.rtkgps.settings;
 import android.content.Context;
 
 import com.rtkgps.MainActivity;
+import com.rtkgps.RtkNaviService;
 import com.rtkgps.usb.SerialLineConfiguration;
+import com.rtklib.RtkServer;
 import com.rtklib.RtkServerSettings.*;
+import com.rtklib.constants.StreamFormat;
 import com.rtklib.constants.StreamType;
 
 import javax.annotation.Nonnull;
@@ -23,6 +26,8 @@ public class RoverSettings {
         public UsbSettings() {
             mPath = null;
             mSerialLineConfiguration = new SerialLineConfiguration();
+            mSerialLineConfiguration.setBaudrate(9600);
+
         }
 
         @Override
@@ -66,6 +71,9 @@ public class RoverSettings {
     }
 
     public InputStream getInputStream() {
-
+        final InputStream stream = new InputStream();
+        stream.setFormat(StreamFormat.UBX);
+        stream.setTransportSettings(new RoverSettings.UsbSettings());
+        return stream;
     }
 }

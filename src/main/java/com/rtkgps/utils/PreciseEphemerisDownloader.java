@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ProgressBar;
 
-import com.rtkgps.BuildConfig;
+import com.rtklib.BuildConfig;
 import com.rtkgps.MainActivity;
 import com.rtklib.RtkCommon;
 
@@ -18,6 +18,14 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class PreciseEphemerisDownloader extends AsyncTask<Void, Integer, String> {
+
+    public enum DownloaderCaller{
+        IGU_ORBIT,
+        RAF09,
+        EGM2008_M25,
+        EGM2008_M10,
+        EGM96_M150
+    }
 
     final String TAG = PreciseEphemerisDownloader.class.getSimpleName();
 

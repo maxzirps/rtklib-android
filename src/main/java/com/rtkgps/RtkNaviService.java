@@ -65,7 +65,7 @@ public class RtkNaviService extends IntentService {
     // Binder given to clients
     private final IBinder mBinder = new RtkNaviServiceBinder();
 
-    private static final RtkServer mRtkServer = new RtkServer();
+    public static final RtkServer mRtkServer = new RtkServer();
 
     public static boolean mbStarted = false;
     private PowerManager.WakeLock mCpuLock;
@@ -267,9 +267,7 @@ public class RtkNaviService extends IntentService {
             return;
         }
 
-        SharedPreferences processPrefs = this.getBaseContext().getSharedPreferences(ProcessingOptions1Fragment.SHARED_PREFS_NAME, 0);
-        String ephemVa = processPrefs.getString(ProcessingOptions1Fragment.KEY_SAT_EPHEM_CLOCK, "");
-        EphemerisOption ephemerisOption = EphemerisOption.valueOf(ephemVa);
+        EphemerisOption ephemerisOption = EphemerisOption.BRDC;
         PreciseEphemerisProvider provider = ephemerisOption.getProvider();
         if (provider != null) {
             if (PreciseEphemerisDownloader.isCurrentOrbitsPresent(provider)) {

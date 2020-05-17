@@ -1,6 +1,6 @@
 package com.rtklib.constants;
 
-import com.rtkgps.R;
+import com.rtklib.R;
 
 /**
  * earth tide correction (0:off,1:solid,2:solid+otl+pole)

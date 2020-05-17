@@ -1,5 +1,5 @@
 package com.rtkgps.utils;
 
 public interface IDownloaderAccessResponse {
-    void postResult(String asyncresult, DownloaderCaller caller);
+    void postResult(String asyncresult, PreciseEphemerisDownloader.DownloaderCaller caller);
 }

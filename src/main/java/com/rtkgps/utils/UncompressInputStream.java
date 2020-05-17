@@ -34,7 +34,7 @@ package com.rtkgps.utils;
 
 import android.util.Log;
 
-import com.rtkgps.BuildConfig;
+import com.rtklib.BuildConfig;
 
 import java.io.EOFException;
 import java.io.FilterInputStream;

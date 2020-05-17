@@ -46,6 +46,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'commons-net:commons-net:3.6'
     compileOnly 'net.jcip:jcip-annotations:1.0'
     compileOnly 'com.github.spotbugs:spotbugs-annotations:4.0.3'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
