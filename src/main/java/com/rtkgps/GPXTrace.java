@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import com.rtklib.GTime;
 
@@ -130,7 +130,7 @@ public class GPXTrace {
                  versionAttr.setValue("1.1");
                  rootElement.setAttributeNode(versionAttr);
             Attr creatorAttr = doc.createAttribute("creator");
-                 creatorAttr.setNodeValue("gpsplus.rtkgps");
+                 creatorAttr.setNodeValue("com.rtkgps");
                  rootElement.setAttributeNode(creatorAttr);
             doc.appendChild(rootElement);
             Element trkElement = doc.createElement("trk");

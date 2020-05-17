@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
@@ -12,11 +12,11 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceFragment;
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
-import gpsplus.rtkgps.settings.StationPositionActivity.Value;
-import gpsplus.rtkgps.settings.widget.StreamFormatPreference;
-import gpsplus.rtkgps.settings.widget.StreamTypePreference;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
+import com.rtkgps.settings.StationPositionActivity.Value;
+import com.rtkgps.settings.widget.StreamFormatPreference;
+import com.rtkgps.settings.widget.StreamTypePreference;
 import com.rtklib.ProcessingOptions;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Position3d;

@@ -1,6 +1,6 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
-import gpsplus.rtkgps.ToolsActivity.DownloaderCaller;
+import com.rtkgps.ToolsActivity.DownloaderCaller;
 
 public interface IDownloaderAccessResponse {
     void postResult(String asyncresult, DownloaderCaller caller);

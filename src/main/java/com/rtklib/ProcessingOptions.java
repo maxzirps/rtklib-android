@@ -2,7 +2,7 @@ package com.rtklib;
 
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
+import com.rtkgps.BuildConfig;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.constants.Constants;
 import com.rtklib.constants.EarthTideCorrectionType;

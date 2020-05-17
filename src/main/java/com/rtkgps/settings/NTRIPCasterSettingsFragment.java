@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.content.SharedPreferences;
 import android.content.res.Resources;
@@ -7,9 +7,9 @@ import android.preference.CheckBoxPreference;
 import android.preference.PreferenceFragment;
 import android.widget.Toast;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
-import gpsplus.rtkgps.utils.IP;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
+import com.rtkgps.utils.IP;
 
 public class NTRIPCasterSettingsFragment  extends PreferenceFragment {
     private static final boolean DBG = BuildConfig.DEBUG & true;

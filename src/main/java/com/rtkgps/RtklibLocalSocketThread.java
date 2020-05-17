@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 import android.net.LocalSocket;
 import android.net.LocalSocketAddress;
 import android.net.LocalSocketAddress.Namespace;

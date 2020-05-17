@@ -1,8 +1,8 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import javax.annotation.Nonnull;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 
 import android.content.Context;
 

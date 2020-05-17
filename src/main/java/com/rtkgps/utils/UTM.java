@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import org.proj4.CRSRegistry;
 

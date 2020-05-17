@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,8 +14,8 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.TextView;
 
-import gpsplus.rtkgps.utils.ChangeLog;
-import gpsplus.rtkgps.utils.Translated;
+import com.rtkgps.utils.ChangeLog;
+import com.rtkgps.utils.Translated;
 
 import java.util.Locale;
 

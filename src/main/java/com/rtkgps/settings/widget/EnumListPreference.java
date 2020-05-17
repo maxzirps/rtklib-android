@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings.widget;
+package com.rtkgps.settings.widget;
 
 import android.content.Context;
 import android.content.res.Resources;

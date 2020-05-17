@@ -1,8 +1,8 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import java.util.List;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 import android.preference.PreferenceActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;

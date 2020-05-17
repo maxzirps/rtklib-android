@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.view;
+package com.rtkgps.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,8 +13,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 import com.rtklib.RtkServerObservationStatus;
 import com.rtklib.RtkServerObservationStatus.SatStatus;
 

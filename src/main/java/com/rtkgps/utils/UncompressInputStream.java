@@ -30,11 +30,11 @@
  *
  */
 
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
+import com.rtkgps.BuildConfig;
 
 import java.io.EOFException;
 import java.io.FilterInputStream;

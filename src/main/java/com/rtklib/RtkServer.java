@@ -1,6 +1,6 @@
 package com.rtklib;
 
-import gpsplus.rtkgps.MainActivity;
+import com.rtkgps.MainActivity;
 import proguard.annotation.Keep;
 
 import java.io.File;

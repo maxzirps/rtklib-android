@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.usb;
+package com.rtkgps.usb;
 
 import android.annotation.TargetApi;
 import android.app.PendingIntent;
@@ -12,8 +12,8 @@ import android.hardware.usb.UsbManager;
 import android.hardware.usb.UsbRequest;
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 
 import org.xmlpull.v1.XmlPullParserException;
 

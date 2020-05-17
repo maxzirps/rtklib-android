@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.app.Application;
 import android.content.pm.PackageInfo;

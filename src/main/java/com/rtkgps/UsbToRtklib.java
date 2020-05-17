@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
@@ -10,13 +10,13 @@ import android.hardware.usb.UsbManager;
 import android.os.ConditionVariable;
 import android.util.Log;
 
-import gpsplus.rtkgps.usb.SerialLineConfiguration;
-import gpsplus.rtkgps.usb.UsbAcmController;
-import gpsplus.rtkgps.usb.UsbFTDIController;
-import gpsplus.rtkgps.usb.UsbPl2303Controller;
-import gpsplus.rtkgps.usb.UsbSerialController;
-import gpsplus.rtkgps.usb.UsbSerialController.UsbControllerException;
-import gpsplus.rtkgps.utils.HexString;
+import com.rtkgps.usb.SerialLineConfiguration;
+import com.rtkgps.usb.UsbAcmController;
+import com.rtkgps.usb.UsbFTDIController;
+import com.rtkgps.usb.UsbPl2303Controller;
+import com.rtkgps.usb.UsbSerialController;
+import com.rtkgps.usb.UsbSerialController.UsbControllerException;
+import com.rtkgps.utils.HexString;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,7 +40,7 @@ public class UsbToRtklib {
     public static final int STATE_WAITING = 3;
     public static final int STATE_RECONNECTING = 4;
 
-    public static final String ACTION_USB_DEVICE_ATTACHED = "gpsplus.rtkgps.UsbToRtklib.ACTION_USB_DEVICE_ATTACHED";
+    public static final String ACTION_USB_DEVICE_ATTACHED = "com.rtkgps.UsbToRtklib.ACTION_USB_DEVICE_ATTACHED";
 
     final LocalSocketThread mLocalSocketThread;
     final UsbReceiver mUsbReceiver;
@@ -142,7 +142,7 @@ public class UsbToRtklib {
 
     private class UsbReceiver {
 
-        static final String ACTION_USB_PERMISSION = "gpsplus.rtkgps.usb.UsbReceiver.USB_PERMISSION";
+        static final String ACTION_USB_PERMISSION = "com.rtkgps.usb.UsbReceiver.USB_PERMISSION";
 
         private final SerialLineConfiguration mSerialLineConfiguration;
 

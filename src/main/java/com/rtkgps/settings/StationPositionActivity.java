@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -21,8 +21,8 @@ import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.constants.StationPositionType;

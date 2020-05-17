@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.geoportail;
+package com.rtkgps.geoportail;
 
 public enum GeoportailLayer {
     CADASTRALPARCELS(0,"CADASTRALPARCELS.PARCELS","image/png",".png",6,20),

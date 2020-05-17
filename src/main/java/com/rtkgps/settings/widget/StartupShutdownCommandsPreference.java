@@ -1,7 +1,7 @@
-package gpsplus.rtkgps.settings.widget;
+package com.rtkgps.settings.widget;
 
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 import android.content.Context;
 import android.preference.DialogPreference;
 import android.util.AttributeSet;

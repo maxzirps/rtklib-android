@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -13,15 +13,15 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.EditText;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
-import gpsplus.rtkgps.settings.widget.EarthTideCorrectionPreference;
-import gpsplus.rtkgps.settings.widget.EphemerisOptionPreference;
-import gpsplus.rtkgps.settings.widget.IonosphereCorrectionPreference;
-import gpsplus.rtkgps.settings.widget.MultiSelectListPreferenceWorkaround;
-import gpsplus.rtkgps.settings.widget.PositioningModePreference;
-import gpsplus.rtkgps.settings.widget.TroposphereCorrectionPreference;
-import gpsplus.rtkgps.utils.PreciseEphemerisProvider;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
+import com.rtkgps.settings.widget.EarthTideCorrectionPreference;
+import com.rtkgps.settings.widget.EphemerisOptionPreference;
+import com.rtkgps.settings.widget.IonosphereCorrectionPreference;
+import com.rtkgps.settings.widget.MultiSelectListPreferenceWorkaround;
+import com.rtkgps.settings.widget.PositioningModePreference;
+import com.rtkgps.settings.widget.TroposphereCorrectionPreference;
+import com.rtkgps.utils.PreciseEphemerisProvider;
 import com.rtklib.ProcessingOptions;
 import com.rtklib.constants.EarthTideCorrectionType;
 import com.rtklib.constants.EphemerisOption;

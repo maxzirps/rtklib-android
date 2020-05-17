@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -39,18 +39,18 @@ import com.karumi.dexter.Dexter;
 import com.karumi.dexter.listener.single.DialogOnDeniedPermissionListener;
 import com.karumi.dexter.listener.single.PermissionListener;
 
-import gpsplus.rtkgps.settings.OutputGPXTraceFragment;
-import gpsplus.rtkgps.settings.ProcessingOptions1Fragment;
-import gpsplus.rtkgps.settings.SettingsHelper;
-import gpsplus.rtkgps.settings.SolutionOutputSettingsFragment;
-import gpsplus.rtkgps.settings.StreamBluetoothFragment;
-import gpsplus.rtkgps.settings.StreamBluetoothFragment.Value;
-import gpsplus.rtkgps.settings.StreamMobileMapperFragment;
-import gpsplus.rtkgps.settings.StreamUsbFragment;
-import gpsplus.rtkgps.utils.GpsTime;
-import gpsplus.rtkgps.utils.PreciseEphemerisDownloader;
-import gpsplus.rtkgps.utils.PreciseEphemerisProvider;
-import gpsplus.rtkgps.utils.Shapefile;
+import com.rtkgps.settings.OutputGPXTraceFragment;
+import com.rtkgps.settings.ProcessingOptions1Fragment;
+import com.rtkgps.settings.SettingsHelper;
+import com.rtkgps.settings.SolutionOutputSettingsFragment;
+import com.rtkgps.settings.StreamBluetoothFragment;
+import com.rtkgps.settings.StreamBluetoothFragment.Value;
+import com.rtkgps.settings.StreamMobileMapperFragment;
+import com.rtkgps.settings.StreamUsbFragment;
+import com.rtkgps.utils.GpsTime;
+import com.rtkgps.utils.PreciseEphemerisDownloader;
+import com.rtkgps.utils.PreciseEphemerisProvider;
+import com.rtkgps.utils.Shapefile;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.RtkControlResult;
@@ -122,11 +122,11 @@ public class RtkNaviService extends IntentService implements LocationListener {
     private static final boolean DBG = BuildConfig.DEBUG & true;
     static final String TAG = RtkNaviService.class.getSimpleName();
 
-    public static final String ACTION_START = "gpsplus.rtkgps.RtkNaviService.START";
-    public static final String ACTION_STOP = "gpsplus.rtkgps.RtkNaviService.STOP";
-    public static final String ACTION_STORE_POINT = "gpsplus.rtkgps.RtkNaviService.STORE_POINT";
-    public static final String EXTRA_SESSION_CODE = "gpsplus.rtkgps.RtkNaviService.SESSION_CODE";
-    public static final String EXTRA_POINT_NAME = "gpsplus.rtkgps.RtkNaviService.POINT_NAME";
+    public static final String ACTION_START = "com.rtkgps.RtkNaviService.START";
+    public static final String ACTION_STOP = "com.rtkgps.RtkNaviService.STOP";
+    public static final String ACTION_STORE_POINT = "com.rtkgps.RtkNaviService.STORE_POINT";
+    public static final String EXTRA_SESSION_CODE = "com.rtkgps.RtkNaviService.SESSION_CODE";
+    public static final String EXTRA_POINT_NAME = "com.rtkgps.RtkNaviService.POINT_NAME";
     private static final String RTK_GPS_MOCK_LOC_SERVICE = "RtkGps mock loc service";
     private static final String MM_MAP_HEADER = "COMPD_CS[\"WGS 84\",GEOGCS[\"\",DATUM[\"WGS 84\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"Degrees\",0.0174532925199433],AXIS[\"Long\",East],AXIS[\"Lat\",North]],VERT_CS[\"\",VERT_DATUM[\"Ellipsoid\",2002],UNIT[\"Meters\",1],AXIS[\"Height\",Up]]]\r\n";
     private static final String GPS_PROVIDER = LocationManager.GPS_PROVIDER;
@@ -780,7 +780,7 @@ public class RtkNaviService extends IntentService implements LocationListener {
         final TransportSettings roverSettings;
         roverSettings = settings.getInputRover().getTransportSettings();
         if (roverSettings.getType() == StreamType.MOBILEMAPPER) {
-            StreamMobileMapperFragment.Value mobileMapperSettings = (gpsplus.rtkgps.settings.StreamMobileMapperFragment.Value)roverSettings;
+            StreamMobileMapperFragment.Value mobileMapperSettings = (com.rtkgps.settings.StreamMobileMapperFragment.Value)roverSettings;
             mMobileMapperToRtklib = new MobileMapperToRtklib(this, mobileMapperSettings, mSessionCode);
             mMobileMapperToRtklib.start();
         }
@@ -801,7 +801,7 @@ public class RtkNaviService extends IntentService implements LocationListener {
             final TransportSettings roverSettings;
             roverSettings = settings.getInputRover().getTransportSettings();
             if (roverSettings.getType() == StreamType.USB) {
-                StreamUsbFragment.Value usbSettings = (gpsplus.rtkgps.settings.StreamUsbFragment.Value)roverSettings;
+                StreamUsbFragment.Value usbSettings = (com.rtkgps.settings.StreamUsbFragment.Value)roverSettings;
                 mUsbReceiver = new UsbToRtklib(this, usbSettings.getPath());
                 mUsbReceiver.setSerialLineConfiguration(usbSettings.getSerialLineConfiguration());
                 mUsbReceiver.setCallbacks(new UsbCallbacks(RtkServer.RECEIVER_ROVER));
@@ -814,7 +814,7 @@ public class RtkNaviService extends IntentService implements LocationListener {
             final TransportSettings baseSettings;
             baseSettings = settings.getInputBase().getTransportSettings();
             if (baseSettings.getType() == StreamType.USB) {
-                StreamUsbFragment.Value usbSettings = (gpsplus.rtkgps.settings.StreamUsbFragment.Value)baseSettings;
+                StreamUsbFragment.Value usbSettings = (com.rtkgps.settings.StreamUsbFragment.Value)baseSettings;
                 mUsbReceiver = new UsbToRtklib(this, usbSettings.getPath());
                 mUsbReceiver.setSerialLineConfiguration(usbSettings.getSerialLineConfiguration());
                 mUsbReceiver.setCallbacks(new UsbCallbacks(RtkServer.RECEIVER_BASE));

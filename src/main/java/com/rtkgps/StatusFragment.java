@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import static junit.framework.Assert.assertNotNull;
 
@@ -28,12 +28,12 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import gpsplus.rtkgps.view.GTimeView;
-import gpsplus.rtkgps.view.GpsSkyView;
-import gpsplus.rtkgps.view.SnrView;
-import gpsplus.rtkgps.view.SolutionView;
-import gpsplus.rtkgps.view.SolutionView.Format;
-import gpsplus.rtkgps.view.StreamIndicatorsView;
+import com.rtkgps.view.GTimeView;
+import com.rtkgps.view.GpsSkyView;
+import com.rtkgps.view.SnrView;
+import com.rtkgps.view.SolutionView;
+import com.rtkgps.view.SolutionView.Format;
+import com.rtkgps.view.StreamIndicatorsView;
 import com.rtklib.RtkControlResult;
 import com.rtklib.RtkServerObservationStatus;
 import com.rtklib.RtkServerStreamStatus;

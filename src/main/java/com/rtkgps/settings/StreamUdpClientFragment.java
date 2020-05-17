@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -9,8 +9,8 @@ import android.util.Log;
 
 import javax.annotation.Nonnull;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 import com.rtklib.RtkServerSettings.TransportSettings;
 import com.rtklib.constants.StreamType;
 

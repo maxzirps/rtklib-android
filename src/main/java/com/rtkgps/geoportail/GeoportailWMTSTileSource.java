@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.geoportail;
+package com.rtkgps.geoportail;
 
 import org.osmdroid.ResourceProxy.string;
 import org.osmdroid.tileprovider.MapTile;

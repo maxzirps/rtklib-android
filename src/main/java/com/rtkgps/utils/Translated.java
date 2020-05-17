@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 public enum Translated {
         de("ger"),

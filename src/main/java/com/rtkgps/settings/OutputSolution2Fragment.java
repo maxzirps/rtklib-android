@@ -1,8 +1,8 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.content.Context;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 import com.rtklib.RtkServerSettings.OutputStream;
 import com.rtklib.SolutionOptions;
 

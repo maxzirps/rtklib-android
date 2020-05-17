@@ -1,9 +1,9 @@
-package gpsplus.rtkgps.view;
+package com.rtkgps.view;
 
 import java.text.DecimalFormat;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -215,7 +215,7 @@ public class GpsSkyView extends View {
 
         String plotName;
         try {
-            plotName = getResources().getStringArray(gpsplus.rtkgps.R.array.rtk_server_receiver)[mStatus.getReceiver()]
+            plotName = getResources().getStringArray(com.rtkgps.R.array.rtk_server_receiver)[mStatus.getReceiver()]
                     + " " + mBand;
         }catch (Resources.NotFoundException	e) {
             plotName = "Rover L1";

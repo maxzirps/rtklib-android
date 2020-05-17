@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,8 +13,8 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceFragment;
 import android.text.TextUtils;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 import com.rtklib.SolutionOptions;
 import com.rtklib.constants.GeoidModel;
 import com.rtklib.constants.TimeSystem;

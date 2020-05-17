@@ -2,8 +2,8 @@ package com.rtklib.constants;
 
 com.rtklibimport android.content.res.Resources;
 
-import gpsplus.rtkgps.MainActivity;
-import gpsplus.rtkgps.R;
+import com.rtkgps.MainActivity;
+import com.rtkgps.R;
 
 import java.io.File;
 

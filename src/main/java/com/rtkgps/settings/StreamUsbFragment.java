@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,14 +8,14 @@ import android.preference.ListPreference;
 import android.preference.PreferenceFragment;
 import android.util.Log;
 
-import gpsplus.rtkgps.MainActivity;
-import gpsplus.rtkgps.usb.SerialLineConfiguration;
-import gpsplus.rtkgps.usb.SerialLineConfiguration.Parity;
-import gpsplus.rtkgps.usb.SerialLineConfiguration.StopBits;
+import com.rtkgps.MainActivity;
+import com.rtkgps.usb.SerialLineConfiguration;
+import com.rtkgps.usb.SerialLineConfiguration.Parity;
+import com.rtkgps.usb.SerialLineConfiguration.StopBits;
 import com.rtklib.RtkServerSettings.TransportSettings;
 import com.rtklib.constants.StreamType;
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 
 import javax.annotation.Nonnull;
 

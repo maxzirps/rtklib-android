@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import static junit.framework.Assert.assertNotNull;
 
@@ -20,11 +20,11 @@ import android.view.ViewGroup;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;
-import gpsplus.rtkgps.geoportail.GeoportailLayer;
-import gpsplus.rtkgps.geoportail.GeoportailWMTSTileSource;
-import gpsplus.rtkgps.view.GTimeView;
-import gpsplus.rtkgps.view.SolutionView;
-import gpsplus.rtkgps.view.StreamIndicatorsView;
+import com.rtkgps.geoportail.GeoportailLayer;
+import com.rtkgps.geoportail.GeoportailWMTSTileSource;
+import com.rtkgps.view.GTimeView;
+import com.rtkgps.view.SolutionView;
+import com.rtkgps.view.StreamIndicatorsView;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.RtkControlResult;

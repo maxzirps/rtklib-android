@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.content.Context;
 import android.location.GpsSatellite;
@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.PoGoPin;
 
-import gpsplus.rtkgps.utils.ublox.Message;
+import com.rtkgps.utils.ublox.Message;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,11 +24,11 @@ import java.util.concurrent.TimeUnit;
 
 import javax.annotation.Nonnull;
 
-import gpsplus.rtkgps.utils.BytesTool;
-import gpsplus.rtkgps.utils.HexString;
-import gpsplus.rtkgps.settings.StreamMobileMapperFragment.Value;
+import com.rtkgps.utils.BytesTool;
+import com.rtkgps.utils.HexString;
+import com.rtkgps.settings.StreamMobileMapperFragment.Value;
 
-import static gpsplus.rtkgps.settings.StreamMobileMapperFragment.MOBILEMAPPER_INTERNAL_SENSOR_POGOPIN_PORT;
+import static com.rtkgps.settings.StreamMobileMapperFragment.MOBILEMAPPER_INTERNAL_SENSOR_POGOPIN_PORT;
 
 
 @SuppressWarnings("ALL")

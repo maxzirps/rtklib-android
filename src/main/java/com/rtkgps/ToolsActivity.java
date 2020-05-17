@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
@@ -8,11 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 
-import gpsplus.rtkgps.settings.ProcessingOptions1Fragment;
-import gpsplus.rtkgps.utils.HTTPDownloader;
-import gpsplus.rtkgps.utils.IDownloaderAccessResponse;
-import gpsplus.rtkgps.utils.PreciseEphemerisDownloader;
-import gpsplus.rtkgps.utils.PreciseEphemerisProvider;
+import com.rtkgps.settings.ProcessingOptions1Fragment;
+import com.rtkgps.utils.HTTPDownloader;
+import com.rtkgps.utils.IDownloaderAccessResponse;
+import com.rtkgps.utils.PreciseEphemerisDownloader;
+import com.rtkgps.utils.PreciseEphemerisProvider;
 import com.rtklib.RtkCommon;
 import com.rtklib.constants.EphemerisOption;
 

@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.usb;
+package com.rtkgps.usb;
 
 import android.content.Context;
 import android.hardware.usb.UsbDevice;

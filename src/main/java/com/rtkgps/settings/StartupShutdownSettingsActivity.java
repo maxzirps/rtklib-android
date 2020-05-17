@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -16,8 +16,8 @@ import android.widget.EditText;
 
 import butterknife.ButterKnife;
 import butterknife.BindView;
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

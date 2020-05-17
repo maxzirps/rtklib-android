@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.usb;
+package com.rtkgps.usb;
 
 import android.content.Context;
 import android.hardware.usb.UsbConstants;
@@ -8,9 +8,9 @@ import android.hardware.usb.UsbEndpoint;
 import android.hardware.usb.UsbManager;
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.usb.SerialLineConfiguration.Parity;
-import gpsplus.rtkgps.usb.SerialLineConfiguration.StopBits;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.usb.SerialLineConfiguration.Parity;
+import com.rtkgps.usb.SerialLineConfiguration.StopBits;
 
 import java.io.InputStream;
 import java.io.OutputStream;

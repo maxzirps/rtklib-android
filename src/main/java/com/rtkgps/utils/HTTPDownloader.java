@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import android.os.AsyncTask;
 import android.util.Base64;
@@ -6,8 +6,8 @@ import android.util.Log;
 import android.widget.ProgressBar;
 
 import cz.msebera.android.httpclient.impl.client.HttpClientBuilder;
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.ToolsActivity.DownloaderCaller;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.ToolsActivity.DownloaderCaller;
 
 import cz.msebera.android.httpclient.HttpEntity;
 import cz.msebera.android.httpclient.HttpResponse;

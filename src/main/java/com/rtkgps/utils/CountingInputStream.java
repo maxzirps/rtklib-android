@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

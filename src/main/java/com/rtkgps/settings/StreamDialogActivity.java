@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 import com.rtklib.constants.StreamType;
 
 public class StreamDialogActivity extends Activity {

@@ -12,7 +12,7 @@
  * @author: Karsten Priegnitz
  * @see: http://code.google.com/p/android-change-log/
  */
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.webkit.WebView;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;

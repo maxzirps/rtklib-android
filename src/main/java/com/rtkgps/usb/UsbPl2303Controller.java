@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.usb;
+package com.rtkgps.usb;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.hardware.usb.UsbEndpoint;
 import android.hardware.usb.UsbManager;
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
+import com.rtkgps.BuildConfig;
 
 import java.io.InputStream;
 import java.io.OutputStream;

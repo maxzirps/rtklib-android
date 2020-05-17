@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,10 +9,10 @@ import android.preference.TwoStatePreference;
 import android.text.TextUtils;
 import android.util.Log;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.R;
-import gpsplus.rtkgps.settings.widget.StreamFormatPreference;
-import gpsplus.rtkgps.settings.widget.StreamTypePreference;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.R;
+import com.rtkgps.settings.widget.StreamFormatPreference;
+import com.rtkgps.settings.widget.StreamTypePreference;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkServerSettings.InputStream;
 

@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.utils.ublox;
+package com.rtkgps.utils.ublox;
 
 public class Message {
 

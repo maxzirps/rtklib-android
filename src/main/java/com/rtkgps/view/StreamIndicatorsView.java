@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.view;
+package com.rtkgps.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -9,7 +9,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.rtklib.RtkServerStreamStatus;
-import gpsplus.rtkgps.BuildConfig;
+import com.rtkgps.BuildConfig;
 
 public class StreamIndicatorsView extends View {
 

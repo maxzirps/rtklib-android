@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.settings;
+package com.rtkgps.settings;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -12,7 +12,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
 
-import gpsplus.rtkgps.R;
+import com.rtkgps.R;
 
 public class StreamSettingsActivity extends Activity implements
 ActionBar.TabListener {

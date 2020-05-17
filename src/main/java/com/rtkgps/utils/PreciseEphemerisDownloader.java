@@ -1,12 +1,12 @@
-package gpsplus.rtkgps.utils;
+package com.rtkgps.utils;
 
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.ProgressBar;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.MainActivity;
-import gpsplus.rtkgps.ToolsActivity.DownloaderCaller;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.MainActivity;
+import com.rtkgps.ToolsActivity.DownloaderCaller;
 import com.rtklib.RtkCommon;
 
 import org.apache.commons.net.ftp.FTP;

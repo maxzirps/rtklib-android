@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -10,10 +10,10 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 
-import gpsplus.rtkgps.settings.InputBaseFragment;
-import gpsplus.rtkgps.settings.InputCorrectionFragment;
-import gpsplus.rtkgps.settings.InputRoverFragment;
-import gpsplus.rtkgps.settings.SolutionOutputSettingsFragment;
+import com.rtkgps.settings.InputBaseFragment;
+import com.rtkgps.settings.InputCorrectionFragment;
+import com.rtkgps.settings.InputRoverFragment;
+import com.rtkgps.settings.SolutionOutputSettingsFragment;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.RtkServerObservationStatus;
 

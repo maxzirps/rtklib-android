@@ -1,4 +1,4 @@
-package gpsplus.rtkgps.view;
+package com.rtkgps.view;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -11,14 +11,14 @@ import android.view.View;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-import gpsplus.rtkgps.BuildConfig;
-import gpsplus.rtkgps.DemoModeLocation;
-import gpsplus.rtkgps.MainActivity;
-import gpsplus.rtkgps.Proj4Converter;
-import gpsplus.rtkgps.R;
-import gpsplus.rtkgps.RtkNaviService;
-import gpsplus.rtkgps.settings.SolutionOutputSettingsFragment;
-import gpsplus.rtkgps.utils.UTM;
+import com.rtkgps.BuildConfig;
+import com.rtkgps.DemoModeLocation;
+import com.rtkgps.MainActivity;
+import com.rtkgps.Proj4Converter;
+import com.rtkgps.R;
+import com.rtkgps.RtkNaviService;
+import com.rtkgps.settings.SolutionOutputSettingsFragment;
+import com.rtkgps.utils.UTM;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Deg2Dms;
 import com.rtklib.RtkCommon.Matrix3x3;

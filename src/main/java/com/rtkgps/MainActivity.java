@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.Manifest;
 import android.app.Activity;
@@ -43,14 +43,16 @@ import butterknife.BindView;
 // import com.dropbox.sync.android.DbxAccountManager;
 
 import gpsplus.ntripcaster.NTRIPCaster;
-import gpsplus.rtkgps.settings.NTRIPCasterSettingsFragment;
-import gpsplus.rtkgps.settings.ProcessingOptions1Fragment;
-import gpsplus.rtkgps.settings.SettingsActivity;
-import gpsplus.rtkgps.settings.SettingsHelper;
-import gpsplus.rtkgps.settings.SolutionOutputSettingsFragment;
-import gpsplus.rtkgps.settings.StreamSettingsActivity;
-import gpsplus.rtkgps.utils.ChangeLog;
-import gpsplus.rtkgps.utils.GpsTime;
+import proguard.annotation.BuildConfig;
+
+import com.rtkgps.settings.NTRIPCasterSettingsFragment;
+import com.rtkgps.settings.ProcessingOptions1Fragment;
+import com.rtkgps.settings.SettingsActivity;
+import com.rtkgps.settings.SettingsHelper;
+import com.rtkgps.settings.SolutionOutputSettingsFragment;
+import com.rtkgps.settings.StreamSettingsActivity;
+import com.rtkgps.utils.ChangeLog;
+import com.rtkgps.utils.GpsTime;
 
 import java.io.BufferedOutputStream;
 import java.io.File;

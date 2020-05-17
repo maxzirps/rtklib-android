@@ -1,4 +1,4 @@
-package gpsplus.rtkgps;
+package com.rtkgps;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 
-import gpsplus.rtkgps.view.SolutionView;
+import com.rtkgps.view.SolutionView;
 import com.rtklib.RtkCommon;
 import com.rtklib.RtkCommon.Position3d;
 import com.rtklib.Solution;
