@@ -1,6 +1,5 @@
 package com.rtkgps;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -14,6 +13,8 @@ import android.os.Environment;
 import android.os.IBinder;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,7 +25,7 @@ import javax.annotation.Nonnull;
 
 import proguard.annotation.BuildConfig;
 
-public class MainActivity extends Activity {
+public abstract class MainActivity extends AppCompatActivity {
 
     private static final boolean DBG = BuildConfig.DEBUG & true;
     static final String TAG = MainActivity.class.getSimpleName();
@@ -37,10 +38,9 @@ public class MainActivity extends Activity {
 
     RtkNaviService mRtkService;
     boolean mRtkServiceBound = false;
-    private String mSessionCode;
-    private static String mApplicationDirectory = "";
+    protected String mSessionCode;
+    protected static String mApplicationDirectory = "";
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -114,7 +114,7 @@ public class MainActivity extends Activity {
 
 
 
-    private void copyAssetsDirToApplicationDirectory(String sourceDir, File destDir) throws FileNotFoundException, IOException
+    protected void copyAssetsDirToApplicationDirectory(String sourceDir, File destDir) throws FileNotFoundException, IOException
     {
         //copy assets/data to appdir/data
         java.io.InputStream stream = null;
@@ -149,18 +149,18 @@ public class MainActivity extends Activity {
         }
     }
 
-    private void copyAssetsToApplicationDirectory() throws FileNotFoundException, IOException
+    protected void copyAssetsToApplicationDirectory() throws FileNotFoundException, IOException
     {
        copyAssetsDirToApplicationDirectory("data",this.getFilesDir());
        copyAssetsDirToApplicationDirectory("proj4",this.getFilesDir());
     }
 
-    private void copyAssetsToWorkingDirectory() throws FileNotFoundException, IOException
+    protected void copyAssetsToWorkingDirectory() throws FileNotFoundException, IOException
     {
         copyAssetsDirToApplicationDirectory("ntripcaster",getFileStorageDirectory());
     }
 
-    private void proxyIfUsbAttached(Intent intent) {
+    protected void proxyIfUsbAttached(Intent intent) {
 
         if (intent == null) return;
 
@@ -175,8 +175,9 @@ public class MainActivity extends Activity {
 
 
 
-    private void startRtkService(String sessionCode) {
-        mSessionCode = sessionCode;
+    public void startRtkService() {
+        Log.d(TAG, "startRtkService");
+        mSessionCode = String.valueOf(System.currentTimeMillis());
         final Intent rtkServiceIntent = new Intent(RtkNaviService.ACTION_START);
         rtkServiceIntent.putExtra(RtkNaviService.EXTRA_SESSION_CODE,mSessionCode);
         rtkServiceIntent.setClass(this, RtkNaviService.class);
@@ -188,6 +189,7 @@ public class MainActivity extends Activity {
     }
 
     private void stopRtkService() {
+        Log.d(TAG, "stopRtkService");
         final Intent intent = new Intent(RtkNaviService.ACTION_STOP);
         intent.setClass(this, RtkNaviService.class);
         startService(intent);
@@ -199,7 +201,7 @@ public class MainActivity extends Activity {
 
 
 
-    private ServiceConnection mConnection = new ServiceConnection() {
+    protected ServiceConnection mConnection = new ServiceConnection() {
 
         @Override
         public void onServiceConnected(ComponentName className, IBinder service) {

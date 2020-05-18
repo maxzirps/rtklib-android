@@ -59,7 +59,6 @@ public class RtkNaviService extends IntentService {
     public static final String EXTRA_SESSION_CODE = "com.rtkgps.RtkNaviService.SESSION_CODE";
     public static final String EXTRA_POINT_NAME = "com.rtkgps.RtkNaviService.POINT_NAME";
     private static final String MM_MAP_HEADER = "COMPD_CS[\"WGS 84\",GEOGCS[\"\",DATUM[\"WGS 84\",SPHEROID[\"WGS 84\",6378137,298.257223563],TOWGS84[0,0,0,0,0,0,0]],PRIMEM[\"Greenwich\",0],UNIT[\"Degrees\",0.0174532925199433],AXIS[\"Long\",East],AXIS[\"Lat\",North]],VERT_CS[\"\",VERT_DATUM[\"Ellipsoid\",2002],UNIT[\"Meters\",1],AXIS[\"Height\",Up]]]\r\n";
-    private static final String GPS_PROVIDER = LocationManager.GPS_PROVIDER;
     private boolean mHavePoint = false;
 
     // Binder given to clients

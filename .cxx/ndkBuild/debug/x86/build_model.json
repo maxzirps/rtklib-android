@@ -1,0 +1,60 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "/home/max/workspace/rtklib-android",
+      "sdkFolder": "/home/max/Android/Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "/home/max/workspace/rtklib-android/build/intermediates",
+      "gradleModulePathName": ":",
+      "moduleRootFolder": "/home/max/workspace/rtklib-android",
+      "makeFile": "/home/max/workspace/rtklib-android/jni/Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "/home/max/workspace/rtklib-android/.cxx",
+      "cxxFolder": "/home/max/workspace/rtklib-android/.cxx",
+      "ndkFolder": "/home/max/Android/Sdk/ndk/21.1.6352462",
+      "ndkVersion": "21.1.6352462",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "/home/max/workspace/rtklib-android/build/intermediates/ndkBuild/debug/lib",
+    "objFolder": "/home/max/workspace/rtklib-android/build/intermediates/ndkBuild/debug/obj/local",
+    "jsonFolder": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug",
+    "gradleBuildOutputFolder": "/home/max/workspace/rtklib-android/.cxx/cxx/debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86",
+  "jsonFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/android_gradle_build.json",
+  "gradleBuildOutputFolder": "/home/max/workspace/rtklib-android/.cxx/cxx/debug/x86",
+  "objFolder": "/home/max/workspace/rtklib-android/build/intermediates/ndkBuild/debug/obj/local/x86",
+  "buildCommandFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/build_command.txt",
+  "buildOutputFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/build_output.txt",
+  "modelOutputFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/build_model.json",
+  "jsonGenerationLoggingRecordFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/json_generation_record.json",
+  "compileCommandsJsonFile": "/home/max/workspace/rtklib-android/.cxx/ndkBuild/debug/x86/compile_commands.json"
+}
