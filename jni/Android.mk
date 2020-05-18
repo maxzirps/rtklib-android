@@ -79,5 +79,3 @@ LOCAL_SRC_FILES := \
     proj4/src/PJ_vgridshift.c proj4/src/PJ_hgridshift.c proj4/src/PJ_unitconvert.c proj4/src/PJ_molodensky.c \
     proj4/src/PJ_deformation.c proj4/src/pj_internal.c proj4/src/PJ_axisswap.c
 include $(BUILD_SHARED_LIBRARY)
-
-
