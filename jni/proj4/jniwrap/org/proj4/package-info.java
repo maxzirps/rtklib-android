@@ -30,7 +30,7 @@
  */
 
 /**
- * Wrappers for the <a href="http://proj.osgeo.org/">Proj4</a> library. The {@link org.proj4.PJ}
+ * Wrappers for the <a href="http://proj.osgeo.org/">Proj4</a> library. The {@link proj4.PJ}
  * class contains only native methods delegating their work to the Proj.4 library.
  * For higher-level methods making use of those native methods, see for example the
  * <a href="http://www.geoapi.org/geoapi-proj4/index.html">GeoAPI bindings for Proj.4</a>.

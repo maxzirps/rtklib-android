@@ -15,6 +15,18 @@ buildscript {
     }
 }
 
+dependencies {
+    implementation 'commons-net:commons-net:3.6'
+    compileOnly 'net.jcip:jcip-annotations:1.0'
+    compileOnly 'com.github.spotbugs:spotbugs-annotations:4.0.3'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation 'com.infstory:proguard-annotations:1.0.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
 
 android {
    sourceSets.main.res.filter.exclude '**/proj4/jniwrap/org/**'
@@ -38,7 +50,18 @@ android {
             abiFilters.add('arm64-v8a')
         }
     }
-
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDir 'libs'
+        }
+    }
     externalNativeBuild {
         ndkBuild {
             path 'jni/Android.mk'
@@ -60,15 +83,3 @@ repositories {
     jcenter()
 }
 
-dependencies {
-    implementation 'commons-net:commons-net:3.6'
-    compileOnly 'net.jcip:jcip-annotations:1.0'
-    compileOnly 'com.github.spotbugs:spotbugs-annotations:4.0.3'
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.annotation:annotation:1.1.0'
-    implementation 'com.infstory:proguard-annotations:1.0.1'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-}

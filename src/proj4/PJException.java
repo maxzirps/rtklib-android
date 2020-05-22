@@ -1,10 +1,12 @@
 /******************************************************************************
+ * $Id: PJException.java 2092 2011-08-27 20:30:36Z desruisseaux $
+ *
  * Project:  PROJ.4
- * Purpose:  Java/JNI wrappers for PROJ API.
+ * Purpose:  Java/JNI wrappers for PROJ.4 API.
  * Author:   Martin Desruisseaux
  *
  ******************************************************************************
- * Copyright (c) 2011-2018, Open Geospatial Consortium, Inc.
+ * Copyright (c) 2011, Open Geospatial Consortium, Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -23,17 +25,38 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
  * DEALINGS IN THE SOFTWARE.
- ******************************************************************************
+ *****************************************************************************
+ * This file is a copy of a file developed in the GeoAPI "Proj.4 binding"
+ * module (http://www.geoapi.org/geoapi-proj4/index.html). If this file is
+ * modified, please consider synchronizing the changes with GeoAPI.
  */
+package proj4;
+
 
 /**
- * Wrappers for the <a href="http://proj4.org/">PROJ</a> library.
- * The {@link proj4.PJ} class contains only native methods delegating their work to the PROJ library.
- * For higher-level methods making use of those native methods, see for example the
- * <a href="http://www.geoapi.org/geoapi-proj4/index.html">GeoAPI bindings for PROJ</a>.
+ * Exception thrown when a call to {@link PJ#transform(PJ, int, double[], int, int)} failed.
  *
  * @author  Martin Desruisseaux (Geomatys)
- * @version 5.1
- * @since   4.8
  */
-package org.proj4;
+public class PJException extends Exception {
+    /**
+     * For cross-version compatibility.
+     */
+    private static final long serialVersionUID = -2580747577812829763L;
+
+    /**
+     * Constructs a new exception with no message.
+     */
+    public PJException() {
+        super();
+    }
+
+    /**
+     * Constructs a new exception with the given message.
+     *
+     * @param message A message that describe the cause for the failure.
+     */
+    public PJException(final String message) {
+        super(message);
+    }
+}

@@ -47,7 +47,7 @@ package org.proj4;
  */
 public class PJ {
     /**
-     * The maximal number of dimension accepted by the {@link #transform(PJ, int, double[], int, int)}
+     * The maximal number of dimension accepted by the {@link #transform(proj4.PJ, int, double[], int, int)}
      * method. This upper limit is actually somewhat arbitrary. This limit exists mostly as a safety
      * against potential misuse.
      */
@@ -91,7 +91,7 @@ public class PJ {
      * @param  type The type of the new CRS. Currently, only {@link Type#GEOGRAPHIC} is supported.
      * @throws IllegalArgumentException If the PJ structure can not be created.
      */
-    public PJ(final PJ crs, final Type type) throws IllegalArgumentException {
+    public PJ(final proj4.PJ crs, final Type type) throws IllegalArgumentException {
         if (crs == null) {
             // TODO: Use Objects with JDK 7.
             throw new NullPointerException("The CRS must be non-null.");
@@ -125,7 +125,7 @@ public class PJ {
      * @param  projected The CRS from which to derive the base geographic CRS.
      * @return A pointer to the PJ native data structure, or 0 if the operation failed.
      */
-    private static native long allocateGeoPJ(PJ projected);
+    private static native long allocateGeoPJ(proj4.PJ projected);
 
     /**
      * Returns the version number of the Proj4 library.
@@ -150,7 +150,7 @@ public class PJ {
     public native Type getType();
 
     /**
-     * The coordinate reference system (CRS) type returned by {@link PJ#getType()}.
+     * The coordinate reference system (CRS) type returned by {@link proj4.PJ#getType()}.
      * In the Proj.4 library, a CRS can only be geographic, geocentric or projected,
      * without distinction between 2D and 3D CRS.
      *
@@ -264,7 +264,7 @@ public class PJ {
      *
      * @see org.opengis.referencing.operation.MathTransform#transform(double[], int, double[], int, int)
      */
-    public native void transform(PJ target, int dimension, double[] coordinates, int offset, int numPts)
+    public native void transform(proj4.PJ target, int dimension, double[] coordinates, int offset, int numPts)
             throws PJException;
 
     /**
