@@ -23,7 +23,7 @@ public class RoverSettings {
         private SerialLineConfiguration mSerialLineConfiguration;
 
         public UsbSettings() {
-            mPath = null;
+            mPath = "usb_streamName";
             mSerialLineConfiguration = new SerialLineConfiguration();
             mSerialLineConfiguration.setBaudrate(9600);
 

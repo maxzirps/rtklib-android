@@ -70,7 +70,7 @@ public class RtkNaviService extends IntentService {
 
     private UsbToRtklib mUsbReceiver;
     private String mSessionCode;
-    private Shapefile mShapefile;
+   // private Shapefile mShapefile;
 
     @Override
     public void onCreate() {
@@ -97,12 +97,14 @@ public class RtkNaviService extends IntentService {
                 } else {
                     mSessionCode = String.valueOf(System.currentTimeMillis());
                 }
-                mShapefile = new Shapefile(MainActivity.getAndCheckSessionDirectory(mSessionCode),
-                        mSessionCode + ".shp");
+                Log.d(TAG, "before shapefile");
+           //     mShapefile = new Shapefile(MainActivity.getAndCheckSessionDirectory(mSessionCode),
+           //            mSessionCode + ".shp");
+                Log.d(TAG, "after shapefile");
                 processStart();
             } else if (action.equals(ACTION_STOP)) {
                 processStop();
-                mShapefile.close();
+            //    if (mShapefile != null) mShapefile.close();
                 if (mHavePoint) {
                     createMapFile();
                 }
@@ -230,7 +232,7 @@ public class RtkNaviService extends IntentService {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if (mShapefile != null) {
+    /*    if (mShapefile != null) {
             mShapefile.addPoint(pointName, dLon, dLat, height,
                     Math.sqrt(Qe[4] < 0 ? 0 : Qe[4]),
                     Math.sqrt(Qe[0] < 0 ? 0 : Qe[0]),
@@ -238,6 +240,7 @@ public class RtkNaviService extends IntentService {
                     gpsTime.getGpsWeek(), (long) gpsTime.getSecondsOfWeek(),
                     nbSat);
         }
+     */
     }
 
     /**

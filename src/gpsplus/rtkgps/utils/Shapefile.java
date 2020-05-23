@@ -29,28 +29,41 @@ public class Shapefile {
     public Shapefile(String shapefileDirectory, String shapefileBaseName) {
         mshapefileDirectory = shapefileDirectory;
         mshapefileBaseName = shapefileBaseName;
-
+        Log.d("SHAPEFILE", "constructor called");
         if (ogr.GetDriverCount() < 1)
         {
             gdal.AllRegister();
             ogr.RegisterAll();
         }
+        Log.d("SHAPEFILE", "1");
         File fshapefileDirectory = new File(shapefileDirectory);
         if (!fshapefileDirectory.exists()){
             fshapefileDirectory.mkdirs();
         }
+        Log.d("SHAPEFILE", "c2");
         Vector layerOtions = new Vector();
         layerOtions.add("ENCODING=UTF-8");
 
         shapefileDriver = ogr.GetDriverByName("ESRI Shapefile");
         ds = shapefileDriver.CreateDataSource(mshapefileDirectory+File.separator+mshapefileBaseName);
+        Log.d("SHAPEFILE", "3");
         if( ds == null )
         {
             Log.e( "GDAL"," driver failed to create "+ mshapefileDirectory+File.separator+mshapefileBaseName );
             return;
         }
-        SpatialReference srs = new SpatialReference(osr.SRS_WKT_WGS84);
-        layer = ds.CreateLayer(LAYER_NAME, srs, ogrConstants.wkbPoint25D,layerOtions);
+        Log.d("SHAPEFILE", "4");
+
+        try {
+            SpatialReference srs = new SpatialReference(osr.SRS_WKT_WGS84);
+            Log.d("SHAPEFILE", "4.5");
+            layer = ds.CreateLayer(LAYER_NAME, srs, ogrConstants.wkbPoint25D, layerOtions);
+            Log.d("SHAPEFILE", "4.8");
+        } catch (Exception e) {
+            Log.e("SHAPEFILE", e.getMessage());
+        }
+        Log.d("SHAPEFILE", "5");
+
         layer.CreateField(new FieldDefn("name",ogrConstants.OFTString));
         layer.CreateField(new FieldDefn("qN", ogrConstants.OFTReal));
         layer.CreateField(new FieldDefn("qE", ogrConstants.OFTReal));
